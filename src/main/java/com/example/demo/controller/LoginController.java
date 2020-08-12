@@ -12,14 +12,14 @@ public class LoginController {
     public void login() {
 
     }
-
-    @GetMapping("/accessDenied")
+//
+    @GetMapping("/loginSuccess")
     public void accessDenied(){
-        log.debug("accessDenied");
+        log.debug("loginSuccess");
     }
-
-    @GetMapping("/logout")
-    public void logout(){
-        log.debug("logout");
-    }
+//
+//    @GetMapping("/logout")
+//    public void logout(){
+//        log.debug("accessDenied");
+//    }
 }

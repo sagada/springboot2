@@ -23,10 +23,10 @@ public class SampleController {
         return "index";
     }
 
-    @RequestMapping("/guest")
+    @RequestMapping("/member")
     public void forGuest()
     {
-        log.info("guest");
+        log.info("member");
     }
 
     @RequestMapping("/manager")
