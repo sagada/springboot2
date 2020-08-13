@@ -14,13 +14,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         log.info("security configure method");
-        http.authorizeRequests().antMatchers("/").permitAll()
-        .antMatchers("/member/**").authenticated()
-        .antMatchers("/manager/**").hasRole("MANAGER")
-        .antMatchers("/admin/**").hasRole("ADMIN");
+        http.authorizeRequests()
+            .antMatchers("/").permitAll()
+            .antMatchers("/member/**").authenticated()
+            .antMatchers("/manager/**").hasRole("MANAGER")
+            .antMatchers("/admin/**").hasRole("ADMIN");
 
         http.csrf().disable();
         http.formLogin().loginPage("/login").defaultSuccessUrl("/loginSuccess", true);
+        http.exceptionHandling().accessDeniedPage("/accessDenied");
+
     }
 
     @Autowired
