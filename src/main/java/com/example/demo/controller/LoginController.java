@@ -9,12 +9,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class LoginController {
 
     @GetMapping("/login")
-    public void login() {
+    public void login()
+    {
 
     }
-//
+
     @GetMapping("/loginSuccess")
-    public void loginSuccess(){
+    public void loginSuccess()
+    {
         log.debug("loginSuccess");
     }
 
@@ -23,9 +25,4 @@ public class LoginController {
     {
         log.debug("accessDenied");
     }
-//
-//    @GetMapping("/logout")
-//    public void logout(){
-//        log.debug("accessDenied");
-//    }
 }
