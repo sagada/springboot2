@@ -1,9 +1,8 @@
-HELP.md
-target/
 
 .idea
-*.iws
-*.iml
-*.ipr
+.mvn
+src/main/resources/
+target
+demo.iml
+HELP.md
 
-.vscode/
