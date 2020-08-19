@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import com.example.demo.domain.Board;
 import com.example.demo.repository.BoardRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;

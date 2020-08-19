@@ -1,8 +1,6 @@
 package com.example.demo;
 
-import com.example.demo.domain.Board;
 import com.example.demo.domain.Member;
-import com.example.demo.domain.Role;
 import com.example.demo.repository.BoardRepository;
 import com.example.demo.repository.MemberRepository;
 import org.junit.Test;
@@ -67,15 +65,6 @@ public class MemberRepositoryTest {
             board.setContent(member2.getName() + " 가 등록한 게시글" + i );
             boardRepository.save(board);
         }
-
-
-
-
-
-
-
-
-
     }
 
 
